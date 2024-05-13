@@ -8,6 +8,10 @@
   font-family: "Anonymous Pro";
 }
 
+body {
+  background: #1f2229;
+}
+
 a {
   text-decoration: none;
   color: inherit;
@@ -23,7 +27,6 @@ a {
   display: flex;
   width: 100vw;
   height: 100vh;
-  background: #1f2229;
 }
 
 .left {

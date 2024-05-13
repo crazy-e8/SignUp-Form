@@ -1,0 +1,46 @@
+.right {
+  padding: 2rem;
+  color: white;
+}
+
+legend {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+fieldset {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6em;
+  font-size: 1.2rem;
+  padding: 1em;
+}
+
+.inp {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+}
+
+.inp input,
+.inp select {
+  pointer-events: stroke;
+  color: white;
+  font-size: 20px;
+  padding: 8px;
+  border: none;
+  background-color: transparent;
+  border-bottom: 2px solid white;
+}
+
+.inp select option {
+  background-color: #1f2229;
+}
+
+input:focus {
+  outline: none;
+}
+
+svg {
+  width: 30px;
+}
