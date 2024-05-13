@@ -1,6 +1,9 @@
 .right {
   padding: 2rem;
   color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 legend {
@@ -11,9 +14,9 @@ legend {
 fieldset {
   display: flex;
   flex-direction: column;
-  gap: 0.6em;
+  gap: 0.8em;
   font-size: 1.2rem;
-  padding: 1em;
+  padding: 2em;
 }
 
 .inp {
@@ -24,21 +27,51 @@ fieldset {
 
 .inp input,
 .inp select {
-  pointer-events: stroke;
   color: white;
   font-size: 20px;
   padding: 8px;
   border: none;
   background-color: transparent;
   border-bottom: 2px solid white;
+  width: 20em;
 }
 
 .inp select option {
   background-color: #1f2229;
 }
 
-input:focus {
+input:focus,
+select:focus {
   outline: none;
+}
+
+.actbtns {
+  margin-top: 1rem;
+  display: flex;
+  gap: 0.5em;
+}
+
+.actbtns input {
+  padding: 10px;
+  flex: 1;
+  outline: none;
+  font-size: 16px;
+  font-weight: 700;
+  border: 2px solid white;
+  background-color: transparent;
+  color: white;
+  border-radius: 20px;
+}
+
+.actbtns input[type="submit"] {
+  color: #1f2229;
+  background-color: white;
+}
+
+.actbtns input:hover {
+  transition: 0.2s ease-in-out;
+  border: invert;
+  font-size: 1.05em;
 }
 
 svg {
